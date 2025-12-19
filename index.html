@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>北斗短报文野外救援系统</title>
+    <!-- 引入 Tailwind CSS CDN (本地部署推荐集成到构建流程中) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { margin: 0; background-color: #020617; }
+      #root { height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import React from 'react';
+      import ReactDOM from 'react-dom/client';
+      import App from './App.jsx';
+
+      ReactDOM.createRoot(document.getElementById('root')).render(
+        React.createElement(React.StrictMode, null, React.createElement(App))
+      );
+    </script>
+  </body>
+</html>
